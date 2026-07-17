@@ -2,8 +2,8 @@
 
 **Effective date:** 17 July 2026
 **App:** SehatCare — Offline AI Health Companion (`com.example.sehatapp`)
-**Publisher:** *[Your name / organisation]*
-**Contact:** *[Your support email]*
+**Publisher:** *Ashish Kumar Ray*
+**Contact:** *ashishray2696@gmail.com*
 
 This policy explains what SehatCare collects, where it is stored, who can see it, and what your rights are. It is written to satisfy Google Play's User Data policy and India's Digital Personal Data Protection Act, 2023.
 
