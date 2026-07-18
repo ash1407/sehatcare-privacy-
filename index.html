@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SehatCare — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1f2328;
+      background: #ffffff;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #3b82d4;
+      color: #ffffff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header .app-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.18);
+      margin-bottom: 16px;
+    }
+    header .app-icon svg { width: 36px; height: 36px; fill: #ffffff; }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+    header .subtitle {
+      font-size: 13px;
+      opacity: 0.85;
+      letter-spacing: 0.2px;
+    }
+
+    /* ── Meta strip ── */
+    .meta-strip {
+      background: #f7f8fa;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 12px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      justify-content: center;
+    }
+    .meta-strip span {
+      font-size: 13px;
+      color: #57606a;
+    }
+    .meta-strip strong { color: #1f2328; }
+
+    /* ── Summary banner ── */
+    .summary-banner {
+      max-width: 760px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+    .summary-banner .card {
+      background: #eef4fb;
+      border: 1px solid #bcd4f0;
+      border-left: 4px solid #3b82d4;
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .summary-banner .card p {
+      font-size: 14px;
+      color: #1f2328;
+      margin: 0;
+    }
+    .summary-banner .card p + p { margin-top: 6px; }
+
+    /* ── TOC ── */
+    .toc-wrapper {
+      max-width: 760px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+    }
+    .toc {
+      background: #f7f8fa;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #57606a;
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 16px;
+    }
+    .toc ol li { font-size: 13.5px; }
+    .toc ol li a { color: #3b82d4; text-decoration: none; }
+    .toc ol li a:hover { text-decoration: underline; }
+
+    /* ── Main content ── */
+    main {
+      max-width: 760px;
+      margin: 32px auto 0;
+      padding: 0 24px 60px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      scroll-margin-top: 12px;
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1f2328;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e5e7eb;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .sec-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #3b82d4;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 10px;
+    }
+    ul li, ol li { margin-bottom: 5px; font-size: 14px; }
+
+    /* data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin-top: 10px;
+    }
+    .data-table th {
+      background: #f7f8fa;
+      border: 1px solid #e5e7eb;
+      padding: 9px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #57606a;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .data-table td {
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      vertical-align: top;
+    }
+    .data-table tr:nth-child(even) td { background: #fafbfc; }
+
+    /* pill badges */
+    .badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+    .badge-green  { background: #dcfce7; color: #166534; }
+    .badge-blue   { background: #dbeafe; color: #1e40af; }
+    .badge-purple { background: #ede9fe; color: #5b21b6; }
+
+    /* warning / info callout */
+    .callout {
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 12px 0;
+      font-size: 13.5px;
+    }
+    .callout-warn {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      color: #7c2d12;
+    }
+    .callout-info {
+      background: #eff6ff;
+      border-left: 4px solid #3b82d4;
+      color: #1e3a5f;
+    }
+
+    /* permission grid */
+    .perm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .perm-card {
+      background: #f7f8fa;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+    .perm-card .perm-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: #1f2328;
+      margin-bottom: 3px;
+    }
+    .perm-card .perm-reason {
+      font-size: 12.5px;
+      color: #57606a;
+    }
+
+    /* third-party list */
+    .tp-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .tp-item:last-child { border-bottom: none; }
+    .tp-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #3b82d4;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .tp-body { font-size: 14px; }
+    .tp-body a { color: #3b82d4; }
+
+    /* footer */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #57606a;
+      border-top: 1px solid #e5e7eb;
+      padding: 18px 24px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 540px) {
+      .toc ol { grid-template-columns: 1fr; }
+      .perm-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="app-icon">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14h-2v-5H9l3-6 3 6h-2z"/>
+    </svg>
+  </div>
+  <h1>SehatCare — Privacy Policy</h1>
+  <p class="subtitle">Offline AI Health Companion &nbsp;·&nbsp; com.example.sehatapp</p>
+</header>
+
+<!-- ── META STRIP ── -->
+<div class="meta-strip">
+  <span><strong>Effective date:</strong> 17 July 2026</span>
+  <span><strong>Package:</strong> com.example.sehatapp</span>
+  <span><strong>Data residency:</strong> On-device only</span>
+  <span><strong>Compliance:</strong> Google Play User Data Policy &nbsp;·&nbsp; DPDP Act 2023 (India)</span>
+</div>
+
+<!-- ── SUMMARY BANNER ── -->
+<div class="summary-banner">
+  <div class="card">
+    <p><strong>SehatCare is offline-first.</strong> All health information you enter stays on your phone. We do not run a server that receives your health data. We cannot see your data.</p>
+    <p><strong>No accounts.</strong> Sign-in is a local PIN. Nothing about your identity leaves the phone. The app makes network requests only in three specific, user-initiated situations (see §3).</p>
+  </div>
+</div>
+
+<!-- ── TABLE OF CONTENTS ── -->
+<div class="toc-wrapper">
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">In short</a></li>
+      <li><a href="#s2">Data stored on your device</a></li>
+      <li><a href="#s3">Network activity</a></li>
+      <li><a href="#s4">AI processing</a></li>
+      <li><a href="#s5">Accounts</a></li>
+      <li><a href="#s6">Permissions</a></li>
+      <li><a href="#s7">Children</a></li>
+      <li><a href="#s8">Data retention &amp; deletion</a></li>
+      <li><a href="#s9">Security</a></li>
+      <li><a href="#s10">Third-party services</a></li>
+      <li><a href="#s14">Health data disclosure</a></li>
+      <li><a href="#s11">Medical disclaimer</a></li>
+      <li><a href="#s12">Changes to this policy</a></li>
+      <li><a href="#s13">Contact</a></li>
+    </ol>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<main>
+
+  <!-- §1 -->
+  <section id="s1">
+    <h2><span class="sec-num">1</span> In short</h2>
+    <p>SehatCare is an <strong>offline-first</strong> health app. All health information you enter — symptoms, vitals, medicine reminders, family profiles, mental-health screening scores, menstrual cycle logs, diary entries, and chat conversations with the on-device AI Doctor — stays on your phone.</p>
+    <div class="callout callout-info">
+      <strong>We do not run a server that receives your health data. We cannot see your data.</strong>
+    </div>
+    <p>There are <strong>no accounts</strong>. Sign-in is a local PIN set on your device. Nothing about your identity leaves the phone. The app does make network requests in three specific, user-initiated situations described in §3.</p>
+  </section>
+
+  <!-- §2 -->
+  <section id="s2">
+    <h2><span class="sec-num">2</span> What data SehatCare stores on your device</h2>
+    <p>The following categories are stored <strong>only on your device</strong>, in the app's private storage (<code>SharedPreferences</code> and the app's private <code>files/</code> directory):</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>What is stored</th>
+          <th>Leaves device?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personal profile</td>
+          <td>Display name, age, gender, allergies, chronic conditions, DOB</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Family members</td>
+          <td>Same profile fields per member, plus active member ID</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Vitals log</td>
+          <td>Blood pressure, blood sugar, weight, temperature, timestamps</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Medicine reminders</td>
+          <td>Name, strength, instructions, dose interval, start/end dates</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Prescription-scan output</td>
+          <td>Extracted medicine names/frequencies from scanned photos</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Symptom check history</td>
+          <td>Symptom text, AI-suggested condition and severity</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Symptom diary</td>
+          <td>Daily entries you logged</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Mental-health screening</td>
+          <td>PHQ-9 and GAD-7 scores, band, timestamp, safety flag. Individual answers are NOT stored.</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Menstrual cycle log</td>
+          <td>Start/end dates, flow, symptoms, notes</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Vaccine schedule</td>
+          <td>Dates of vaccines marked "given"; custom vaccines</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Government schemes list</td>
+          <td>Default set, anything synced from a URL you provided, or added manually</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Drug interactions list</td>
+          <td>Default set plus any you added</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Chat sessions</td>
+          <td>Multi-session AI Doctor conversations, message text, timestamps, guided-flow state</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>Sign-in state</td>
+          <td>PBKDF2-hashed PIN (never plaintext), per-install random salt, biometric flag, display name</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+        <tr>
+          <td>App preferences</td>
+          <td>Language choice, permission-onboarding flag, model-download variant</td>
+          <td><span class="badge badge-green">Never</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- §3 -->
+  <section id="s3">
+    <h2><span class="sec-num">3</span> Network activity — what and why</h2>
+    <p>SehatCare uses the internet only for these operations, all <strong>triggered by you</strong>:</p>
+    <ol>
+      <li><strong>AI model download.</strong> The Gemma 4 language model (E2B or E4B variant, ~2.5–3.6 GB) is downloaded from a source you explicitly pick — HuggingFace (<code>huggingface.co</code>) or Google Drive. No health data is sent with the request. The download server sees only your phone's public IP address, User-Agent, and the fact that a Gemma file was requested.</li>
+      <li><strong>Government scheme lookup ("From webpage").</strong> If you tap <strong>From webpage</strong> and provide a URL, SehatCare fetches that URL's HTML for one-time on-device parsing by the AI. The URL is one you typed; only that URL is fetched. Your health data is not sent.</li>
+      <li><strong>Find Nearby Doctor.</strong> If you tap this button, SehatCare opens Google Maps with a search query built from the suggested specialist name. Google Maps then follows its own privacy policy.</li>
+    </ol>
+    <div class="callout callout-info">
+      SehatCare does <strong>not</strong> send analytics, telemetry, crash reports, or advertising identifiers anywhere.
+    </div>
+  </section>
+
+  <!-- §4 -->
+  <section id="s4">
+    <h2><span class="sec-num">4</span> AI processing — where it happens</h2>
+    <p>The AI Doctor (Gemma 4) runs entirely <strong>on your device</strong> after the one-time model download. Every message you type into the chat, every symptom you enter into Symptom Checker, every question fed to the AI for pattern-spotting or briefing generation is processed <strong>locally</strong>.</p>
+    <div class="callout callout-info">
+      Nothing is uploaded to any AI service.
+    </div>
+  </section>
+
+  <!-- §5 -->
+  <section id="s5">
+    <h2><span class="sec-num">5</span> Accounts</h2>
+    <p>SehatCare does not use any cloud account system. Sign-in is a <strong>local PIN</strong> set on first launch, with optional biometric unlock. No email, no password, no Google Sign-In. The PIN and your display name never leave your device.</p>
+  </section>
+
+  <!-- §6 -->
+  <section id="s6">
+    <h2><span class="sec-num">6</span> Permissions and why we ask for them</h2>
+    <div class="perm-grid">
+      <div class="perm-card">
+        <div class="perm-name">Notifications</div>
+        <div class="perm-reason">To fire medicine-reminder alarms.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Camera</div>
+        <div class="perm-reason">For the prescription scanner and chatbot photo attachments.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Microphone</div>
+        <div class="perm-reason">For voice input in the AI Doctor chat.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Exact alarms</div>
+        <div class="perm-reason">So reminders fire on time even when the phone is idle.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Battery optimization exemption</div>
+        <div class="perm-reason">So reminders aren't killed by aggressive OEM battery savers.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Install unknown apps</div>
+        <div class="perm-reason">Only if you use "Share SehatCare with a Friend" to share the APK.</div>
+      </div>
+      <div class="perm-card">
+        <div class="perm-name">Storage (read-only, SAF)</div>
+        <div class="perm-reason">Only when you tap "I already have the file" to point us at a pre-downloaded model on your device.</div>
+      </div>
+    </div>
+    <p style="margin-top:14px; font-size:13.5px; color:#57606a;">You can deny any permission and still use the app; the affected feature will explain what it needs.</p>
+  </section>
+
+  <!-- §7 -->
+  <section id="s7">
+    <h2><span class="sec-num">7</span> Children</h2>
+    <p>SehatCare is intended for users <strong>13 years and older</strong>. It is not designed for children under 13 and should not be used to make medical decisions for infants without a doctor's supervision.</p>
+  </section>
+
+  <!-- §8 -->
+  <section id="s8">
+    <h2><span class="sec-num">8</span> Data retention and deletion</h2>
+    <p>Because SehatCare stores everything locally, <strong>deleting the app deletes your data</strong>. To delete data while keeping the app installed:</p>
+    <ul>
+      <li>Individual features have "Clear" / "Delete" controls (Reports, Chat sessions, Medicine reminders, Diary, etc.).</li>
+      <li>To wipe <em>everything</em> the app has stored: Android <strong>Settings → Apps → SehatCare → Storage &amp; cache → Clear storage</strong>. This resets the PIN, deletes health data, and removes the AI model file.</li>
+    </ul>
+    <p>We have no server-side data, so there is no server-side deletion request to make.</p>
+  </section>
+
+  <!-- §9 -->
+  <section id="s9">
+    <h2><span class="sec-num">9</span> Security</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Measure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PIN storage</td>
+          <td>Hashed with PBKDF2-HMAC-SHA256 (100,000 iterations) using a 16-byte per-install random salt. Only the hash is stored. Verification uses constant-time comparison.</td>
+        </tr>
+        <tr>
+          <td>Biometric unlock</td>
+          <td>Uses AndroidX BiometricPrompt at <code>BIOMETRIC_WEAK</code> level. Biometric templates never leave the phone's secure enclave.</td>
+        </tr>
+        <tr>
+          <td>Health data</td>
+          <td>Stored in the app's private directory, accessible only to SehatCare. ADB backup is disabled (<code>allowBackup="false"</code>).</td>
+        </tr>
+        <tr>
+          <td>Network</td>
+          <td>All downloads use HTTPS. Cleartext HTTP is denied by default in the network-security config.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- §10 -->
+  <section id="s10">
+    <h2><span class="sec-num">10</span> Third-party services</h2>
+    <p>SehatCare intentionally minimises third parties. The following are contacted only in the specific scenarios described in §3:</p>
+    <div style="margin-top:10px;">
+      <div class="tp-item">
+        <div class="tp-dot"></div>
+        <div class="tp-body">
+          <strong>HuggingFace</strong> (<a href="https://huggingface.co" target="_blank" rel="noopener">huggingface.co</a>) — model host you can pick when downloading Gemma.
+          <a href="https://huggingface.co/privacy" target="_blank" rel="noopener">HuggingFace Privacy Notice</a>
+        </div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-dot"></div>
+        <div class="tp-body">
+          <strong>Google Drive</strong> (<a href="https://drive.google.com" target="_blank" rel="noopener">drive.google.com</a>) — alternative model host you can pick.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+        </div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-dot"></div>
+        <div class="tp-body">
+          <strong>Google Maps</strong> (<a href="https://maps.google.com" target="_blank" rel="noopener">maps.google.com</a>) — used only if you tap <strong>Find Nearby Doctor</strong>.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:12px; font-size:13.5px;">The AI Doctor is Google's Gemma 4 (E2B / E4B) open-weights model, run on-device. No inference request reaches Google or any AI provider.</p>
+  </section>
+
+  <!-- §14 -->
+  <section id="s14">
+    <h2><span class="sec-num">14</span> Health data — detailed disclosure</h2>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">a. What health data SehatCare collects</h3>
+    <p>SehatCare collects the following categories of health-related data, entered manually by you:</p>
+    <ul>
+      <li><strong>Vitals</strong> — blood pressure readings, blood sugar levels, body weight, body temperature, and their timestamps.</li>
+      <li><strong>Symptoms</strong> — free-text symptom descriptions you type into the Symptom Checker or Symptom Diary, and the AI's suggested guidance in response.</li>
+      <li><strong>Medicines</strong> — medicine names, strengths, dosage instructions, and reminder schedules you create.</li>
+      <li><strong>Prescription scan output</strong> — medicine names and frequencies extracted from photos of prescription labels that you scan.</li>
+      <li><strong>Mental wellness check-ins</strong> — PHQ-9 and GAD-7 aggregate scores, wellness band, timestamp, and a safety flag. Individual questionnaire answers are discarded immediately after scoring and are never stored.</li>
+      <li><strong>Menstrual cycle log</strong> — cycle start and end dates, flow level, associated symptoms, and notes you enter.</li>
+      <li><strong>Vaccine record</strong> — dates of vaccines you mark as given and any custom vaccine entries you add.</li>
+      <li><strong>Drug interaction reference</strong> — medicine pairs you look up; the query and result are processed and displayed locally only.</li>
+      <li><strong>AI chat history</strong> — the full text of your conversations with the on-device AI Health Assistant, stored locally so you can review past sessions.</li>
+    </ul>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">b. Purpose of health data collection</h3>
+    <p>Each category of health data is collected solely to provide the feature you explicitly use:</p>
+    <table class="data-table" style="margin-top:8px;">
+      <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>Vitals</td><td>Display trends, generate health reports on-device</td></tr>
+        <tr><td>Symptoms</td><td>Provide AI-generated informational guidance on-device</td></tr>
+        <tr><td>Medicines &amp; reminders</td><td>Fire timely local alarm notifications</td></tr>
+        <tr><td>Prescription scan output</td><td>Pre-fill your medicine reminder list</td></tr>
+        <tr><td>Mental wellness scores</td><td>Show your historical wellness trend on-device</td></tr>
+        <tr><td>Menstrual log</td><td>Display cycle history and patterns on-device</td></tr>
+        <tr><td>Vaccine record</td><td>Track your immunisation history on-device</td></tr>
+        <tr><td>Drug interaction queries</td><td>Return reference information on-device</td></tr>
+        <tr><td>Chat history</td><td>Let you review and continue past AI conversations</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:10px; font-size:13.5px; color:#57606a;">No health data is used for advertising, profiling, or any purpose beyond the feature that collected it.</p>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">c. Processing location</h3>
+    <p>All health data is processed <strong>entirely on your device</strong>. SehatCare does not transmit any health data to a server, cloud service, or any third party. The AI Health Assistant (Gemma 4) runs locally after a one-time model download — no health data leaves your device during AI inference.</p>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">d. Health Connect</h3>
+    <div class="callout callout-info">
+      SehatCare does <strong>not</strong> connect to, read from, or write to Android Health Connect or Google Fit. No health data is exchanged with any platform health data store.
+    </div>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">e. User consent and control</h3>
+    <p>You provide health data voluntarily by using specific features. You may:</p>
+    <ul>
+      <li>Skip any feature entirely — the app functions without any health data entered.</li>
+      <li>Delete individual entries within each feature using its built-in Clear / Delete controls.</li>
+      <li>Wipe all health data at once via <strong>Android Settings → Apps → SehatCare → Storage &amp; cache → Clear storage</strong>.</li>
+    </ul>
+    <p>By entering health data into any feature, you consent to it being stored locally on your device for the purpose described above.</p>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">f. No third-party sharing</h3>
+    <div class="callout callout-info">
+      SehatCare does <strong>not</strong> share, sell, license, or transmit health data to any third party, advertiser, analytics provider, or AI service. The three network operations described in §3 do not involve any health data.
+    </div>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">g. Security of health data</h3>
+    <ul>
+      <li>Stored in the app's private directory (<code>/data/data/com.example.sehatapp/</code>), inaccessible to other apps.</li>
+      <li>ADB backup is disabled (<code>allowBackup="false"</code>), preventing backup to Google servers or a PC.</li>
+      <li>All network activity uses HTTPS; cleartext HTTP is blocked by the network security config.</li>
+    </ul>
+
+    <h3 style="font-size:14px; font-weight:600; margin:16px 0 8px;">h. Data retention</h3>
+    <p>Health data is retained on your device until you delete it. There is no automatic expiry. Since SehatCare has no server, there is no server-side retention period and no server-side deletion to request.</p>
+  </section>
+
+  <!-- §11 -->
+  <section id="s11">
+    <h2><span class="sec-num">11</span> Medical disclaimer</h2>
+    <div class="callout callout-warn">
+      SehatCare is an <strong>informational aid only</strong>. It does not replace professional medical advice, diagnosis, or treatment. The AI Doctor's outputs are model-generated and may be wrong. Always consult a qualified doctor for medical decisions. <strong>In an emergency, call your local emergency number.</strong>
+    </div>
+  </section>
+
+  <!-- §12 -->
+  <section id="s12">
+    <h2><span class="sec-num">12</span> Changes to this policy</h2>
+    <p>If we update this policy, we will publish the new version at the same URL and update the "Effective date" at the top. Substantive changes will be announced in-app.</p>
+  </section>
+
+  <!-- §13 -->
+  <section id="s13">
+    <h2><span class="sec-num">13</span> Contact</h2>
+    <p>Questions or complaints about privacy: <em>[your support email]</em>.</p>
+    <div class="callout callout-info">
+      <strong>India (DPDP Act, 2023):</strong> You have the right to access, correct, and erase your personal data. Since SehatCare stores data only on your device, these actions are performed directly by you on your device (see §8).
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; SehatCare &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Effective 17 July 2026
+  <br><span style="color:#adb5bd;">Made with IBM Bob</span>
+</footer>
+
+</body>
+</html>
